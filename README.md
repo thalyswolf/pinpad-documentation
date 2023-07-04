@@ -150,7 +150,7 @@ O Pinpad pode enviar uma lista de opções a qual deve ser exibida no display pa
 |payload.action.showTo|SIM|string|Displays que serão exibidos|
 ```json
 {
-	'payload': {
+	"payload": {
 	    "action": {
 			"type": "menu-question",
 			"text": "Escolha uma das opções",
@@ -175,7 +175,7 @@ A aplicação deve exibir a mensagem para o usuário e deixar ele escolher uma o
 |payload.action.answerOption|SIM|string|Se escolher a 3 - Terceira opcao deve se enviar apenas o número 3|
 ```json
 {
-	'payload': {
+	"payload": {
 	    "action": {
 			"type": "answer-menu",
 			"answerOption": "3"
@@ -195,7 +195,7 @@ Eventualmente o Pinpad pode fazer uma pergunta do tipo "Digite os últimos quatr
 |payload.action.showTo|SIM|string|Onde deve exibir a pergunta|
 ```json
 {
-	'payload': {
+	"payload": {
 	    "action": {
 			"type": "question",
 			"text": "Digite os 4 últimos dígitos do cartão",
@@ -215,7 +215,7 @@ Deverá responder com a estrutura
 ```json
 {
 	"endpoint": "continue-transaction",
-	'payload': {
+	"payload": {
 	    "action": {
 			"type": "answer",
 			"rawText": "1234"
@@ -233,7 +233,7 @@ Com uma certa frequência o Pinpad vai perguntar se deseja ou não continuar a t
 |payload.action.type|SIM|string|será preenchido com continue|
 ```json
 {
-	'payload': {
+	"payload": {
 	    "action": {
 			"type": "continue"
 		}
@@ -250,7 +250,7 @@ Deverá responder com a estrutura
 |payload.action.value|SIM|boolean|True se quer continuar False se deseja abortar a operação|
 ```json
 {
-	'payload': {
+	"payload": {
 	    "action": {
 			"type": "continue",
 			"value": true
@@ -269,7 +269,7 @@ Após uma transação ser aprovada, deverá imprimir o comprovante ou exibir na 
 |payload.action.receipt|SIM|string|Recibo em string|
 ```json
 {
-	'payload': {
+	"payload": {
 	    "action": {
 			"type": "transaction-approved",
 			"receipt": "COMPROVANTE\nLINHA1\nLINHA2"
@@ -287,7 +287,7 @@ A aplicação deverá responder com a estrutura:
 |payload.action.type|SIM|string|Preencher com finish-transaction para confirmar a transação ou undo-transaction para desfazer|
 ```json
 {
-	'payload': {
+	"payload": {
 	    "action": {
 			"type": "finish-transaction ou undo-transaction",
 		}
