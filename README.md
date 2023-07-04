@@ -159,7 +159,7 @@ O Pinpad pode enviar uma lista de opções a qual deve ser exibida no display pa
 			   "2 - Segunda opcao",
 			   "3 - Terceira opcao"
 			],
-			"showTo": 'both'
+			"showTo": "both"
 		}
 	}
  }
